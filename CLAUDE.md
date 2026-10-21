@@ -22,7 +22,7 @@ React on Vite+ (ADR-0007) talking REST with OpenAPI plus one WebSocket route for
 
 ## Project intent
 
-Hireva is a hobby project for anonymous hiring: candidate identity (name, school, employer) stays hidden through screening, interview and tests, and is revealed only after selection. The approved design doc is `~/.gstack/projects/hireva/midhun-unknown-design-20261021-152535.md`. It covers scope, premises and open questions; read it before building.
+Hireva is a hobby project for anonymous hiring: candidate identity (name, school, employer) stays hidden through screening, interview and tests, and is revealed only after selection. The approved design doc is `docs/design/hireva-design-doc.md`. It covers scope, premises and open questions; read it before building.
 
 Planned v1: a candidate-side leak linter for portfolios, plus an anonymous voice interview with an AI agent (voice is the main channel; the agent can ask for a typed text or code answer in a platform editor, no free chat box) whose transcript is scrubbed of identity clues and whose audio is discarded before a recruiter scores it. Gender and accent leaks are accepted for v1. No video or screen sharing. Constraints that cut across files: candidate identity lives in a separate schema that evaluator-facing queries never read (Q-023); transcribed speech is scrubbed before it is stored or sent to any model (Q-024); typed text and code are not scrubbed, the editor shows an identity-clue warning instead (Q-027, Q-028); v1 uses fake data only (Q-014).
 
