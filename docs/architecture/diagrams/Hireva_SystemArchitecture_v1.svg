@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1552" height="852" viewBox="0 0 1552 852" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" data-view="columns">
+<rect x="0" y="0" width="1552" height="852" fill="#ffffff"/>
+<text x="24.0" y="36.0" font-size="20" font-weight="700" fill="#1f2937" text-anchor="start" data-box="24.0 20.0 313.2 21.0">Hireva: System Architecture</text>
+<text x="60.0" y="130.0" font-size="12" font-weight="600" fill="#4b5563" text-anchor="start" letter-spacing="0.8" data-box="60.0 120.4 183.1 12.6">CLIENT APPLICATIONS</text>
+<text x="512.0" y="130.0" font-size="12" font-weight="600" fill="#4b5563" text-anchor="start" letter-spacing="0.8" data-box="512.0 120.4 37.9 12.6">EDGE</text>
+<text x="780.0" y="130.0" font-size="12" font-weight="600" fill="#4b5563" text-anchor="start" letter-spacing="0.8" data-box="780.0 120.4 76.6 12.6">SERVICES</text>
+<text x="1259.7" y="130.0" font-size="12" font-weight="600" fill="#4b5563" text-anchor="start" letter-spacing="0.8" data-box="1259.7 120.4 212.2 12.6">DATA AND THIRD PARTIES</text>
+<rect x="60.0" y="144.0" width="368.0" height="168.0" rx="12" fill="#eaf4ee" stroke="#7fb592" stroke-width="1.4" data-group="0"/>
+<text x="244.0" y="168.0" font-size="13" font-weight="700" fill="#374151" text-anchor="middle" data-box="214.9 157.6 58.2 13.7" data-in="group:0">Browser</text>
+<rect x="512.0" y="144.0" width="208.0" height="104.0" rx="12" fill="#e8eef8" stroke="#8fa6cf" stroke-width="1.4" data-group="1"/>
+<text x="616.0" y="168.0" font-size="13" font-weight="700" fill="#374151" text-anchor="middle" data-box="557.8 157.6 116.5 13.7" data-in="group:1">Oracle VM edge</text>
+<rect x="780.0" y="144.0" width="323.7" height="266.0" rx="12" fill="#eef0fb" stroke="#8e97d6" stroke-width="1.4" data-group="2"/>
+<text x="941.8" y="168.0" font-size="13" font-weight="700" fill="#374151" text-anchor="middle" data-box="812.9 157.6 257.9 13.7" data-in="group:2">Docker Compose on one Oracle VM</text>
+<rect x="1259.7" y="144.0" width="208.0" height="188.0" rx="12" fill="#fbf3e4" stroke="#d4a85a" stroke-width="1.4" data-group="3"/>
+<text x="1363.7" y="168.0" font-size="13" font-weight="700" fill="#374151" text-anchor="middle" data-box="1330.4 157.6 66.6 13.7" data-in="group:3">Supabase</text>
+<rect x="1259.7" y="354.0" width="208.0" height="174.0" rx="12" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.4" stroke-dasharray="6 4" data-group="4"/>
+<text x="1363.7" y="378.0" font-size="13" font-weight="700" fill="#374151" text-anchor="middle" data-box="1309.6 367.6 108.2 13.7" data-in="group:4">Third parties</text>
+<g data-node="web"><rect x="74.0" y="176.0" width="340.0" height="120.0" rx="8" fill="#ffffff" stroke="#5b6b8c" stroke-width="1.4"/>
+<text x="244.0" y="202.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="199.2 190.8 89.6 14.7" data-in="node:web">Hireva Web</text>
+<text x="244.0" y="218.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="205.7 209.2 76.6 11.6" data-in="node:web">React, Vite+</text>
+<rect x="100.6" y="238.0" width="169.1" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Portfolio and leak check"/>
+<text x="185.2" y="253.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="108.6 244.2 153.1 11.6" data-in="node:web">Portfolio and leak check</text>
+<rect x="275.7" y="238.0" width="111.7" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Voice interview"/>
+<text x="331.6" y="253.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="283.7 244.2 95.7 11.6" data-in="node:web">Voice interview</text>
+<rect x="110.2" y="266.0" width="137.2" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Editor and warnings"/>
+<text x="178.8" y="281.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="118.2 272.2 121.2 11.6" data-in="node:web">Editor and warnings</text>
+<rect x="253.4" y="266.0" width="124.5" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Recruiter screens"/>
+<text x="315.6" y="281.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="261.4 272.2 108.5 11.6" data-in="node:web">Recruiter screens</text>
+</g>
+<g data-node="caddy"><rect x="526.0" y="176.0" width="180.0" height="56.0" rx="8" fill="#ffffff" stroke="#5b6b8c" stroke-width="1.4"/>
+<text x="616.0" y="202.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="593.6 190.8 44.8 14.7" data-in="node:caddy">Caddy</text>
+<text x="616.0" y="218.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="600.0 209.2 31.9 11.6" data-in="node:caddy">Caddy</text>
+</g>
+<g data-node="api"><rect x="794.0" y="176.0" width="295.7" height="148.0" rx="8" fill="#ffffff" stroke="#5b6b8c" stroke-width="1.4"/>
+<text x="941.8" y="202.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="897.0 190.8 89.6 14.7" data-in="node:api">Hireva API</text>
+<text x="941.8" y="218.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="878.0 209.2 127.6 11.6" data-in="node:api">Python 3.14, FastAPI</text>
+<g data-icon="store"><path d="M1061.6799999999998 188 v12 a9 4 0 0 0 18 0 v-12" fill="#dbeafe" stroke="#3b6fb6" stroke-width="1.2"/><ellipse cx="1070.6799999999998" cy="188" rx="9" ry="4" fill="#eff6ff" stroke="#3b6fb6" stroke-width="1.2"/></g>
+<rect x="819.3" y="238.0" width="67.0" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Detector"/>
+<text x="852.8" y="253.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="827.3 244.2 51.0 11.6" data-in="node:api">Detector</text>
+<rect x="892.4" y="238.0" width="67.0" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Scrubber"/>
+<text x="925.9" y="253.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="900.4 244.2 51.0 11.6" data-in="node:api">Scrubber</text>
+<rect x="965.4" y="238.0" width="98.9" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Model gateway"/>
+<text x="1014.9" y="253.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="973.4 244.2 82.9 11.6" data-in="node:api">Model gateway</text>
+<rect x="843.1" y="266.0" width="130.8" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Interview sessions"/>
+<text x="908.5" y="281.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="851.1 272.2 114.8 11.6" data-in="node:api">Interview sessions</text>
+<rect x="979.9" y="266.0" width="60.7" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Scoring"/>
+<text x="1010.3" y="281.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="987.9 272.2 44.7 11.6" data-in="node:api">Scoring</text>
+<rect x="809.8" y="294.0" width="98.9" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Organizations"/>
+<text x="859.2" y="309.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="817.8 300.2 82.9 11.6" data-in="node:api">Organizations</text>
+<rect x="914.7" y="294.0" width="54.3" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Reveal"/>
+<text x="941.8" y="309.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="922.7 300.2 38.3 11.6" data-in="node:api">Reveal</text>
+<rect x="975.0" y="294.0" width="98.9" height="22" rx="5" fill="#ffffff" stroke="#b6c2dc" data-module="Speech client"/>
+<text x="1024.5" y="309.0" font-size="11" font-weight="400" fill="#334155" text-anchor="middle" data-box="983.0 300.2 82.9 11.6" data-in="node:api">Speech client</text>
+</g>
+<g data-node="speech"><rect x="794.0" y="338.0" width="295.7" height="56.0" rx="8" fill="#ffffff" stroke="#5b6b8c" stroke-width="1.4"/>
+<text x="941.8" y="364.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="883.6 352.8 116.5 14.7" data-in="node:speech">Hireva Speech</text>
+<text x="941.8" y="380.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="887.6 371.2 108.5 11.6" data-in="node:speech">Moonshine, Kokoro</text>
+</g>
+<g data-node="pg"><rect x="1273.7" y="176.0" width="180.0" height="70.0" rx="8" fill="#e6efff" stroke="#5b6b8c" stroke-width="1.4"/>
+<text x="1363.7" y="202.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="1318.9 190.8 89.6 14.7" data-in="node:pg">PostgreSQL</text>
+<text x="1363.7" y="218.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="1293.5 209.2 140.4 11.6" data-in="node:pg">Evaluator and identity</text>
+<text x="1363.7" y="232.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="1341.3 223.2 44.7 11.6" data-in="node:pg">schemas</text>
+<g data-icon="store"><path d="M1425.6799999999998 188 v12 a9 4 0 0 0 18 0 v-12" fill="#dbeafe" stroke="#3b6fb6" stroke-width="1.2"/><ellipse cx="1434.6799999999998" cy="188" rx="9" ry="4" fill="#eff6ff" stroke="#3b6fb6" stroke-width="1.2"/></g>
+</g>
+<g data-node="auth"><rect x="1273.7" y="260.0" width="180.0" height="56.0" rx="8" fill="#ffffff" stroke="#6b7280" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="1363.7" y="286.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="1305.4 274.8 116.5 14.7" data-in="node:auth">Supabase Auth</text>
+<text x="1363.7" y="302.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="1290.3 293.2 146.7 11.6" data-in="node:auth">Email, password, Google</text>
+</g>
+<g data-node="openrouter"><rect x="1273.7" y="386.0" width="180.0" height="56.0" rx="8" fill="#ffffff" stroke="#6b7280" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="1363.7" y="412.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="1318.9 400.8 89.6 14.7" data-in="node:openrouter">OpenRouter</text>
+<text x="1363.7" y="428.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="1315.8 419.2 95.7 11.6" data-in="node:openrouter">Language models</text>
+</g>
+<g data-node="resend"><rect x="1273.7" y="456.0" width="180.0" height="56.0" rx="8" fill="#ffffff" stroke="#6b7280" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="1363.7" y="482.0" font-size="14" font-weight="700" fill="#1f2937" text-anchor="middle" data-box="1336.8 470.8 53.8 14.7" data-in="node:resend">Resend</text>
+<text x="1363.7" y="498.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="middle" data-box="1306.3 489.2 114.8 11.6" data-in="node:resend">Auth emails (SMTP)</text>
+</g>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker></defs>
+<path d="M414.0 216.0 L458.0 216.0 L458.0 204.0 L526.0 204.0" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="1" data-from="web" data-to="caddy"/>
+<path d="M414.0 256.0 L482.0 256.0 L482.0 72.0 L1157.7 72.0 L1157.7 278.7 L1273.7 278.7" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="2" data-from="web" data-to="auth"/>
+<path d="M706.0 204.0 L750.0 204.0 L750.0 250.0 L794.0 250.0" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="3" data-from="caddy" data-to="api"/>
+<path d="M1089.7 264.8 L1205.7 264.8 L1205.7 366.0 L1089.7 366.0" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="4" data-from="api" data-to="speech"/>
+<path d="M1089.7 205.6 L1133.7 205.6 L1133.7 211.0 L1273.7 211.0" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="5" data-from="api" data-to="pg"/>
+<path d="M1089.7 235.2 L1181.7 235.2 L1181.7 297.3 L1273.7 297.3" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="6" data-from="api" data-to="auth"/>
+<path d="M1089.7 310.4 L1229.7 310.4 L1229.7 414.0 L1273.7 414.0" fill="none" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrow)" data-edge="7" data-from="api" data-to="openrouter"/>
+<path d="M1453.7 288.0 L1497.7 288.0 L1497.7 484.0 L1453.7 484.0" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" data-edge="8" data-from="auth" data-to="resend"/>
+<g data-badge="1" data-box="448.0 200.0 20 20"><circle cx="458.0" cy="210.0" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="458.0" y="214.0" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">1</text></g>
+<g data-badge="2" data-box="472.0 154.0 20 20"><circle cx="482.0" cy="164.0" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="482.0" y="168.0" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">2</text></g>
+<g data-badge="3" data-box="740.0 217.0 20 20"><circle cx="750.0" cy="227.0" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="750.0" y="231.0" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">3</text></g>
+<g data-badge="4" data-box="1195.7 314.4 20 20"><circle cx="1205.7" cy="324.4" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="1205.7" y="328.4" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">4</text></g>
+<g data-badge="5" data-box="1123.7 198.3 20 20"><circle cx="1133.7" cy="208.3" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="1133.7" y="212.3" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">5</text></g>
+<g data-badge="6" data-box="1171.7 241.3 20 20"><circle cx="1181.7" cy="251.3" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="1181.7" y="255.3" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">6</text></g>
+<g data-badge="7" data-box="1219.7 352.2 20 20"><circle cx="1229.7" cy="362.2" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="1229.7" y="366.2" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">7</text></g>
+<g data-badge="8" data-box="1487.7 376.0 20 20"><circle cx="1497.7" cy="386.0" r="10" fill="#ffffff" stroke="#475569" stroke-width="1.3"/><text x="1497.7" y="390.0" font-size="11" font-weight="700" fill="#1f2937" text-anchor="middle">8</text></g>
+<line x1="24" y1="560.0" x2="1527.7" y2="560.0" stroke="#e5e7eb"/>
+<text x="24.0" y="586.0" font-size="12" font-weight="600" fill="#4b5563" text-anchor="start" letter-spacing="0.8" data-box="24.0 576.4 270.2 12.6">WHAT EACH CONNECTION CARRIES</text>
+<g data-legend="1"><circle cx="34.0" cy="608" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="612" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">1</text></g>
+<text x="52.0" y="612.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 602.4 814.3 12.6">Hireva Web to Caddy: REST over HTTPS and the interview WebSocket (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="2"><circle cx="34.0" cy="632" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="636" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">2</text></g>
+<text x="52.0" y="636.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 626.4 814.3 12.6">Hireva Web to Supabase Auth: Sign-up, sign-in and password reset (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="3"><circle cx="34.0" cy="656" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="660" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">3</text></g>
+<text x="52.0" y="660.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 650.4 779.5 12.6">Caddy to Hireva API: REST calls and the interview WebSocket (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="4"><circle cx="34.0" cy="680" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="684" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">4</text></g>
+<text x="52.0" y="684.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 674.4 1030.1 12.6">Hireva API to Hireva Speech: Candidate audio in, transcript out, reply text in, reply audio out (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="5"><circle cx="34.0" cy="704" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="708" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">5</text></g>
+<text x="52.0" y="708.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 698.4 877.0 12.6">Hireva API to PostgreSQL: SQL reads and writes through two database roles (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="6"><circle cx="34.0" cy="728" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="732" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">6</text></g>
+<text x="52.0" y="732.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 722.4 765.6 12.6">Hireva API to Supabase Auth: Token checks and invitations (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="7"><circle cx="34.0" cy="752" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="756" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">7</text></g>
+<text x="52.0" y="756.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 746.4 925.7 12.6">Hireva API to OpenRouter: Cleaned text for replies, proposals and the scrub pass (request and reply, unconfirmed: no call site found)</text>
+<g data-legend="8"><circle cx="34.0" cy="776" r="9" fill="#ffffff" stroke="#475569"/><text x="34.0" y="780" font-size="10" font-weight="700" fill="#1f2937" text-anchor="middle">8</text></g>
+<text x="52.0" y="780.0" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start" data-box="52.0 770.4 821.3 12.6">Supabase Auth to Resend: Confirmation, reset and invitation emails (event or message, unconfirmed: no call site found)</text>
+<line x1="24" y1="816" x2="58" y2="816" stroke="#475569" stroke-width="1.4"/>
+<text x="66.0" y="820.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="start" data-box="66.0 811.2 108.5 11.6">request and reply</text>
+<line x1="202.45999999999998" y1="816" x2="236.45999999999998" y2="816" stroke="#475569" stroke-width="1.4" stroke-dasharray="7 5"/>
+<text x="244.5" y="820.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="start" data-box="244.5 811.2 102.1 11.6">event or message</text>
+<line x1="374.53999999999996" y1="816" x2="408.53999999999996" y2="816" stroke="#475569" stroke-width="1.4" stroke-dasharray="2 4"/>
+<text x="416.5" y="820.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="start" data-box="416.5 811.2 140.4 11.6">bulk or scheduled data</text>
+<text x="584.9" y="820.0" font-size="11" font-weight="400" fill="#4b5563" text-anchor="start" data-box="584.9 811.2 765.6 11.6">a box inside a service is a module; the cylinder marks a service that owns its data; a dashed box is outside our control</text>
+</svg>

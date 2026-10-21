@@ -1,0 +1,126 @@
+{
+  "project": "Hireva",
+  "version": 1,
+  "system_diagram": {
+    "tiers": [
+      {
+        "name": "Client applications",
+        "groups": [
+          {
+            "name": "Browser",
+            "kind": "client",
+            "nodes": [
+              {
+                "id": "web",
+                "name": "Hireva Web",
+                "kind": "app",
+                "tech": "React, Vite+",
+                "modules": ["Portfolio and leak check", "Voice interview", "Editor and warnings", "Recruiter screens"],
+                "owns_store": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Edge",
+        "groups": [
+          {
+            "name": "Oracle VM edge",
+            "kind": "gateway",
+            "nodes": [
+              {
+                "id": "caddy",
+                "name": "Caddy",
+                "kind": "service",
+                "tech": "Caddy",
+                "owns_store": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Services",
+        "groups": [
+          {
+            "name": "Docker Compose on one Oracle VM",
+            "kind": "services",
+            "nodes": [
+              {
+                "id": "api",
+                "name": "Hireva API",
+                "kind": "service",
+                "tech": "Python 3.14, FastAPI",
+                "modules": ["Detector", "Scrubber", "Model gateway", "Interview sessions", "Scoring", "Organizations", "Reveal", "Speech client"],
+                "owns_store": true
+              },
+              {
+                "id": "speech",
+                "name": "Hireva Speech",
+                "kind": "service",
+                "tech": "Moonshine, Kokoro",
+                "owns_store": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data and third parties",
+        "groups": [
+          {
+            "name": "Supabase",
+            "kind": "data",
+            "nodes": [
+              {
+                "id": "pg",
+                "name": "PostgreSQL",
+                "kind": "store",
+                "tech": "Evaluator and identity schemas",
+                "owns_store": false
+              },
+              {
+                "id": "auth",
+                "name": "Supabase Auth",
+                "kind": "external",
+                "tech": "Email, password, Google",
+                "owns_store": false
+              }
+            ]
+          },
+          {
+            "name": "Third parties",
+            "kind": "external",
+            "nodes": [
+              {
+                "id": "openrouter",
+                "name": "OpenRouter",
+                "kind": "external",
+                "tech": "Language models",
+                "owns_store": false
+              },
+              {
+                "id": "resend",
+                "name": "Resend",
+                "kind": "external",
+                "tech": "Auth emails (SMTP)",
+                "owns_store": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "links": [
+      {"from": "web", "to": "caddy", "label": "REST over HTTPS and the interview WebSocket", "kind": "sync", "unconfirmed": true},
+      {"from": "web", "to": "auth", "label": "Sign-up, sign-in and password reset", "kind": "sync", "unconfirmed": true},
+      {"from": "caddy", "to": "api", "label": "REST calls and the interview WebSocket", "kind": "sync", "unconfirmed": true},
+      {"from": "api", "to": "speech", "label": "Candidate audio in, transcript out, reply text in, reply audio out", "kind": "sync", "unconfirmed": true},
+      {"from": "api", "to": "pg", "label": "SQL reads and writes through two database roles", "kind": "sync", "unconfirmed": true},
+      {"from": "api", "to": "auth", "label": "Token checks and invitations", "kind": "sync", "unconfirmed": true},
+      {"from": "api", "to": "openrouter", "label": "Cleaned text for replies, proposals and the scrub pass", "kind": "sync", "unconfirmed": true},
+      {"from": "auth", "to": "resend", "label": "Confirmation, reset and invitation emails", "kind": "async", "unconfirmed": true}
+    ]
+  }
+}

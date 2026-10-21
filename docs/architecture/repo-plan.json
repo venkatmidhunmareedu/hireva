@@ -1,0 +1,38 @@
+{
+  "project": "Hireva",
+  "group": "Hireva",
+  "repos": [
+    {
+      "name": "HirevaClient",
+      "git_path": "Hireva/Client/HirevaClient",
+      "stack": "react-web",
+      "tech": "React, TypeScript, Vite+, TanStack Query",
+      "responsibility": "The web app for candidates and recruiters: portfolio and leak check, voice interview screen with the editor, recruiter screens",
+      "apps": [
+        {"path": "apps/web", "name": "Hireva Web", "for": "candidates taking interviews and recruiters scoring them"}
+      ]
+    },
+    {
+      "name": "HirevaApi",
+      "git_path": "Hireva/Server/HirevaApi",
+      "stack": "python-api",
+      "tech": "Python 3.14, FastAPI, Pydantic, PostgreSQL",
+      "responsibility": "The one backend service: sign-in check, portfolios, postings, interviews, scrubber, model gateway, scoring and the reveal; owns the database"
+    },
+    {
+      "name": "HirevaSpeech",
+      "git_path": "Hireva/Server/HirevaSpeech",
+      "stack": "python-api",
+      "tech": "Python, Moonshine, Kokoro",
+      "responsibility": "Speech-to-text and text-to-speech for the API, nothing else; no database access"
+    },
+    {
+      "name": "HirevaInfra",
+      "git_path": "Hireva/Infrastructure/HirevaInfra",
+      "stack": "none",
+      "stack_note": "Docker Compose and Caddy on one Oracle VM; the kit's infra stack is Terraform and does not fit",
+      "tech": "Docker Compose, Caddy",
+      "responsibility": "Compose file, Caddy configuration and the .env template for the Oracle VM"
+    }
+  ]
+}

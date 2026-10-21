@@ -1,0 +1,8 @@
+.gstack/
+
+# Bearing
+.scratch/
+.bearing/state/
+.claude/settings.local.json
+.claude/worktrees/
+.ruff_cache/
