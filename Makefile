@@ -10,10 +10,13 @@ STATE := .bearing/state
 HLD := docs/design/hireva-hld.md
 ADR_DIR := docs/adr
 
-.PHONY: help check reset-marker need-bearing coverage arch diagrams
+.PHONY: help setup check reset-marker need-bearing coverage arch diagrams
 
 help: ## List targets
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-12s %s\n", $$1, $$2}'
+
+setup: ## Point git at the committed hooks (run once per clone; without it no hook runs)
+	@bash .githooks/install.sh
 
 # The gate. It writes .bearing/state/.check-passed on success, which Bearing's
 # Stop gate reads; .bearing/state/ is git-ignored.
