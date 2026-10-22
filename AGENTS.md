@@ -47,6 +47,14 @@ Breaking one gets the change rejected, whatever else it does.
 - State that must outlive the session: `.bearing/state/` via `session-handoff` (local, ignored). Scratch: `.scratch/`. Nothing at the root such as `NOTES.md`.
 - Done means `definition-of-done` passed with evidence.
 
+## Progress in the README
+
+Whenever a feature (user story) is completed, update `README.md` in the same change:
+- the story's "Done" percentage in the Stories table;
+- its epic row (done points and percent);
+- the overall total (done points / 86) and the Build line;
+- "Last updated" (today's date).
+
 ## Reporting
 
 End every task in this shape: `## Changed` (path: what and why), `## Verified` (the command and the tail of its output), `## Not done` (asked, not delivered, why), `## Noticed` (seen in passing, not fixed). No full diffs, no restating the task.
